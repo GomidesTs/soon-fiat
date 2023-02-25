@@ -1,0 +1,13 @@
+:root {
+  font-size: 68.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141C27;
+}/*# sourceMappingURL=styles.css.map */
