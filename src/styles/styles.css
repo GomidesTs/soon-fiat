@@ -9,5 +9,176 @@
 }
 
 body {
-  background-color: #141C27;
+  background-color: #141c27;
+}
+body main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main svg {
+  width: 50%;
+}
+body main svg .logoBackground {
+  opacity: 0;
+  transform-origin: center;
+  animation: spin 5s 1s ease forwards;
+}
+body main svg .logoBackgroundShadow {
+  opacity: 0;
+  transform-origin: center;
+  animation: spin 5s ease forwards;
+}
+body main svg .circleShadow {
+  opacity: 0;
+  transform-origin: center;
+  animation: rotateStar 3s 1s ease-in-out forwards;
+}
+body main svg .chrome {
+  opacity: 0;
+  transform-origin: center;
+  animation: rotateChrome 2s 2s linear forwards;
+}
+body main svg .redBackground {
+  opacity: 0;
+  transform-origin: center;
+  animation: redBackgroundScale 2s 4s linear forwards;
+}
+body main svg .stripesGrup {
+  opacity: 0;
+  transform-origin: center;
+  animation: dash 8s 7s ease-in-out forwards;
+}
+body main svg .lettrs {
+  opacity: 0;
+  transform-origin: center;
+  animation: spinLettrs 5s 13S ease forwards;
+}
+body main svg .lettrsF {
+  opacity: 0;
+  transform-origin: center;
+  animation: spin 5s 8S ease forwards;
+}
+body main svg .lettrsI {
+  opacity: 0;
+  transform-origin: center;
+  animation: spin 5s 9S ease forwards;
+}
+body main svg .lettrsA {
+  opacity: 0;
+  transform-origin: center;
+  animation: spin 5s 10S ease forwards;
+}
+body main svg .lettrsT {
+  opacity: 0;
+  transform-origin: center;
+  animation: spin 5s 11S ease forwards;
+}
+body main svg .star {
+  opacity: 0;
+  transform-origin: center;
+  animation: rotateStar 2s 14s linear forwards;
+}
+@media (max-width: 800px) {
+  body main svg {
+    width: 90%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes spinLettrs {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes rotateStar {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+}
+@keyframes rotateChrome {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.6;
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes redBackgroundScale {
+  0% {
+    transform: rotate(0deg);
+    transform: scale(1);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+    transform: rotate(-60deg);
+    transform: scale(0.5);
+  }
+  75% {
+    opacity: 0.6;
+    transform: rotate(60deg);
+    transform: scale(1.06);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes dash {
+  0% {
+    opacity: 0.5;
+    transform: scale(2);
+  }
+  25% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */
